@@ -224,11 +224,11 @@ html{
     }
 }
 
-/* .vertical-align{
+.vertical-align{
     display: flex;
     align-items: center;   
     align-content: center; 
-} */
+}
 
 .above{
     -webkit-box-shadow: 0px -1rem .9rem rgba(40, 40, 40, 0.45);
