@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "tellus.llc",
+  "Id": "684dc731-8c19-4dcf-8d33-8a2967485bfb"
+}
