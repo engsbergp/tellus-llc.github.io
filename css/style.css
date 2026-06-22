@@ -214,7 +214,7 @@ html {
    padding-left: 15%;
    color: rgb(80, 80, 80);
    background: #d8e3e6;
-   height: 200px;
+   height: 150px;
    width: 70%;
    border-radius: 0 12px 12px 0;
    -webkit-box-shadow: 0px 0.8rem 1rem rgba(40, 40, 40, 0.4);
@@ -229,7 +229,7 @@ html {
    padding-left: 10%;
    color: rgb(80, 80, 80);
    background: #d8e3e6;
-   height: 200px;
+   height: 150px;
    width: 70%;
    border-radius: 12px 0 0 12px;
    -webkit-box-shadow: 0px 0.8rem 1rem rgba(40, 40, 40, 0.4);
@@ -237,30 +237,30 @@ html {
    box-shadow: 0px 0.8rem 1rem rgba(40, 40, 40, 0.4);
 }
 
-.title-box h2 {
+/* .title-box h2 {
    font-size: 2.5rem;
    margin: 0;
    padding: 0;
-}
+} */
 
-.title-box-reversed h2 {
+/* .title-box-reversed h2 {
    font-size: 2.5rem;
    margin: 0;
    padding: 0;
-}
+} */
 
 .title-box p {
    color: rgb(200, 144, 80);
-   margin: 10px 0 0 0;
-   padding: 0;
-   font-size: 1.4rem;
+   /* margin: 10px 0 0 0; */
+   /* padding: 0; */
+   /* font-size: 1.4rem; */
 }
 
 .title-box-reversed p {
    color: rgb(200, 144, 80);
-   margin: 10px 0 0 0;
-   padding: 0;
-   font-size: 1.4rem;
+   /* margin: 10px 0 0 0; */
+   /* padding: 0; */
+   /* font-size: 1.4rem; */
 }
 
 .recent-title {
@@ -273,7 +273,7 @@ html {
 }
 .recent-background {
    background-color:black;
-   opacity:0.60;
+   opacity:0.65;
    position:absolute;
    top:0;
    left:0;
