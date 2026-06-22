@@ -27,72 +27,57 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-lg bg-body-tertiary">
-			<div class="container-fluid">
-				<img class="nav-img" src="assets/images/TellusLogo.png" />
-				<button
-					data-mdb-collapse-init
-					class="navbar-toggler"
-					type="button"
-					data-mdb-target="#navbarNav"
-					aria-controls="navbarNav"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-					<i class="fas fa-bars"></i>
-				</button>
+		<!-- NAVBAR -->
+		<div class="h-[75px] bg-white flex flex-row justify-between items-center">
+			<!-- image, left side -->
+			<img class="nav-img" src="assets/images/TellusLogo.png" />
 
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#partners"
-								>Partners</a
-							>
-						</li>
-						<li class="nav-item dropdown">
-							<a
-								class="nav-link dropdown-toggle"
-								href="#"
-								role="button"
-								data-bs-toggle="dropdown"
-								aria-expanded="false"
-							>
-								Services
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a class="dropdown-item text-black" href="#training"
-										>Training</a
-									>
-								</li>
-								<li>
-									<a class="dropdown-item text-black" href="#rescue">Rescue</a>
-								</li>
-								<li>
-									<a class="dropdown-item text-black" href="#software"
-										>Software</a
-									>
-								</li>
-								<li>
-									<a class="dropdown-item text-black" href="#concept"
-										>Concept</a
-									>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="under-construction.html">Products</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Features</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>
+			<!-- links, md and lg screens -->
+			<div class="md:flex hidden w-2/3 justify-evenly">
+				<a href="#about">About</a>
+				<a href="#sales">Sales</a>
+				<a href="#services"> Services </a>
+				<a class="nav-link" href="#projects">Projects</a>
+				<a class="nav-link" href="#training">Training</a>
+				<a class="nav-link" href="#contact">Contact</a>
 			</div>
-		</nav>
+			<!-- mobile menu, right side -->
+			<div class="dropdown md:hidden">
+				<button
+					class="dropdown-toggle mr-8"
+					type="button"
+					id="dropdownMenuButton"
+					data-mdb-dropdown-init
+					data-mdb-ripple-init
+					aria-expanded="false"
+				>
+					<i class="fas fa-bars fa-xl"></i>
+				</button>
+				<ul
+					class="dropdown-menu px-5 py-3 text-xl"
+					aria-labelledby="dropdownMenuButton"
+				>
+					<li class="pb-1">
+						<a href="#about">About</a>
+					</li>
+					<li class="pb-1">
+						<a href="#sales">Sales</a>
+					</li>
+					<li class="pb-1">
+						<a href="#services"> Services </a>
+					</li>
+					<li class="pb-1">
+						<a class="nav-link" href="#projects">Projects</a>
+					</li>
+					<li class="pb-1">
+						<a class="nav-link" href="#training">Training</a>
+					</li>
+					<li class="pb-1">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
 		<!------------ HERO ------------>
 		<div
@@ -388,7 +373,7 @@
 		</div>
 
 		<!------------ DEVICE TO DASHBOARD ------------>
-		<div class="py-5">
+		<div class="py-5" id="about">
 			<div class="w-full flex justify-end">
 				<div class="title-box-reversed py-2 mb-5">
 					<h2>Why Tellus?</h2>
@@ -424,7 +409,7 @@
 		</div>
 
 		<!------------ OPTO 22 SALES ------------>
-		<article class="container text-center pb-5" id="partners">
+		<article class="container text-center pb-5" id="sales">
 			<h2 class="py-5 heading-secondary">Opto 22 Sales</h2>
 			<p class="description-text">
 				Tellus is an Opto 22 Distributor. We channel our Opto 22 experience and
@@ -542,8 +527,218 @@
 			</div>
 		</div>
 
+		<!------------ RECENT PROJECTS 1------------>
+		<div class="pt-6 pb-12 w-100 flex flex-col justify-center items-center">
+			<p class="description-title flex justify-center items-center pb-6">
+				Recent Projects
+			</p>
+			<div
+				id="carouselBasicExample_2"
+				class="carousel slide carousel-fade w-full md:w-3/4 lg:w-2/3"
+				data-mdb-ride="carousel"
+				data-mdb-carousel-init
+			>
+				<!-- Indicators -->
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-mdb-target="#carouselBasicExample_2"
+						data-mdb-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-mdb-target="#carouselBasicExample_2"
+						data-mdb-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-mdb-target="#carouselBasicExample_2"
+						data-mdb-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+					<button
+						type="button"
+						data-mdb-target="#carouselBasicExample_2"
+						data-mdb-slide-to="3"
+						aria-label="Slide 4"
+					></button>
+					<button
+						type="button"
+						data-mdb-target="#carouselBasicExample_2"
+						data-mdb-slide-to="4"
+						aria-label="Slide 5"
+					></button>
+				</div>
+
+				<!-- Inner -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							src="assets/images/recentProjects/CroppedImages/image8.png"
+							class="d-block w-100"
+							alt="Energy Manufacturing"
+						/>
+						<div
+							class="absolute top-0 left-0 right-0 flex flex-col p-4 text-white"
+						>
+							<div class="recent-background"></div>
+							<p class="z-10 lg:text-2xl text-xl mb-1">
+								Energy Manufacturing - Georgia, USA
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm mb-1">
+								Tellus collaborated from concept to production of a series of
+								mobile battery trucks, designed to bring clean energy directly
+								to job sites. They provide clean, quiet, and flexible power with
+								a variety of vehicles with an ultra-modern UI and sophisticated
+								data collection.
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm">
+								Tellus created the embedded controls with user interface, mobile
+								App for Apple and Android, secure end-customer Web Portal and
+								reporting system for the fleet. The system is powered by the
+								Particle integrated IoT platform and Ignition.
+							</p>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<img
+							src="assets/images/recentProjects/CroppedImages/image5.png"
+							class="d-block w-100"
+							alt="Pharmaceuticals"
+						/>
+						<div
+							class="absolute top-0 left-0 right-0 flex flex-col p-4 text-white"
+						>
+							<div class="recent-background"></div>
+							<p class="z-10 lg:text-2xl text-xl mb-1">
+								Pharmaceuticals - Iowa, USA
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm mb-1">
+								Controls upgrade to onsite Waste Water Treatment Plant to
+								enhance the collection and alarming of critical process data.
+								Opto 22 Epic integration with Snap PAC hardware. Streamline and
+								modernize for new facility networking and paging systems
+								including voice/PA alerts and Ignition API capability.
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm">
+								The system is powered by Opto 22 and Ignition, with interfaces
+								to various Siemens, Rockwell and Motorola equipment.
+							</p>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<img
+							src="assets/images/recentProjects/CroppedImages/image9.png"
+							class="d-block w-100"
+							alt="Cliff Above a Stormy Sea"
+						/>
+						<div
+							class="absolute top-0 left-0 right-0 flex flex-col p-4 text-white"
+						>
+							<div class="recent-background"></div>
+							<p class="z-10 lg:text-2xl text-xl mb-1">
+								Communications - Multiple Locations, USA
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm mb-1">
+								Provided Opto 22 upgrades to a nationwide set of broadcast
+								facilities - building controls, alarm management and comm.
+								equipment monitoring and environmental controls. Removed legacy
+								hardware, software and operating systems and streamline
+								troublesome subsystems and software components.
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm">
+								Opto 22 powered, with interfaces to HVAC, satellite, and
+								facility controls from various vendors. Providing on-going
+								support to UI, alarms, and data collection to ignition.
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="assets/images/recentProjects/CroppedImages/image4.png"
+							class="d-block w-100"
+							alt="Ag Manufacturing"
+						/>
+						<div
+							class="absolute top-0 left-0 right-0 flex flex-col p-4 text-white"
+						>
+							<div class="recent-background"></div>
+							<p class="z-10 lg:text-2xl text-xl mb-1">
+								Ag Manufacturing - Illinois, USA
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm mb-1">
+								US manufacturer converting sustainable agricultural inputs into
+								value-added, proprietary plant-based proteins and specialty
+								ingredients.
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm">
+								Tellus upgraded a 1990’s vacated factory into a modern
+								production facility using recipe based controls, data collection
+								and analysis, modern graphics and real-time status alerts.
+								Powered by Opto 22 and Ignition, and interfaced to specialized
+								dairy equipment containing Rockwell and Siemens PLCs.
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="assets/images/recentProjects/CroppedImages/image10.png"
+							class="d-block w-100"
+							alt="waste management"
+						/>
+						<div
+							class="absolute top-0 left-0 right-0 flex flex-col p-4 text-white"
+						>
+							<div class="recent-background"></div>
+							<p class="z-10 lg:text-2xl text-xl mb-1">
+								Waste Management - Multiple Locations, USA
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm mb-1">
+								Provide upgrades to a control system that processes and recycles
+								industrial waste. Raw SCADA and IoT data (temperature, flow
+								rates, vibration from shredders, distillation columns, and water
+								treatment tanks) are collected from PLC, Controllers, analyzers
+								and then aggregated.
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm">
+								Powered by Opto 22 and Ignition Edge with additional user
+								interface and reporting with Grafana.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Inner -->
+
+				<!-- Controls -->
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-mdb-target="#carouselBasicExample_2"
+					data-mdb-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-mdb-target="#carouselBasicExample_2"
+					data-mdb-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+
 		<!------------ MOBILE APPLICATIONS ------------>
-		<div class="pt-6 pb-12 is-grey">
+		<div class="pt-6 pb-12 is-grey" id="projects">
 			<article class="container text-center" id="mobile">
 				<p class="description-title flex items-center justify-center pb-6">
 					Mobile Applications
@@ -671,7 +866,7 @@
 
 		<!------------ SOFTWARE ------------>
 		<div class="pt-6 pb-12">
-			<article class="container text-center" id="software">
+			<article class="container text-center">
 				<p class="description-title flex items-center justify-center pb-6">
 					Software
 				</p>
@@ -778,7 +973,7 @@
 
 		<!------------ IGNITION ------------>
 		<div class="pt-6 pb-12">
-			<article class="container text-center" id="service">
+			<article class="container text-center">
 				<p class="description-title flex justify-center items-center pb-6">
 					Ignition
 				</p>
@@ -800,16 +995,14 @@
 			</article>
 		</div>
 
-		<!------------ RECENT PROJECTS ------------>
-
-		<!-- Carousel wrapper -->
-		<div class="pt-6 pb-12">
+		<!------------ RECENT PROJECTS 2------------>
+		<div class="pt-6 pb-12 w-100 flex flex-col justify-center items-center">
 			<p class="description-title flex justify-center items-center pb-6">
 				Recent Projects
 			</p>
 			<div
 				id="carouselBasicExample"
-				class="carousel slide carousel-fade"
+				class="carousel slide carousel-fade w-full md:w-3/4 lg:w-2/3"
 				data-mdb-ride="carousel"
 				data-mdb-carousel-init
 			>
@@ -835,49 +1028,123 @@
 						data-mdb-slide-to="2"
 						aria-label="Slide 3"
 					></button>
+					<button
+						type="button"
+						data-mdb-target="#carouselBasicExample"
+						data-mdb-slide-to="3"
+						aria-label="Slide 4"
+					></button>
 				</div>
 
 				<!-- Inner -->
 				<div class="carousel-inner">
-					<!-- Single item -->
 					<div class="carousel-item active">
 						<img
-							src="assets/images/recentProjects/image1.png"
+							src="assets/images/recentProjects/CroppedImages/image3.png"
 							class="d-block w-100"
-							alt="Sunset Over the City"
+							alt="Metal Manufacturing"
 						/>
-						<!-- <div class="carousel-caption d-none d-md-block">
-							<h5>First slide label</h5>
-							<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-						</div> -->
-					</div>
-
-					<!-- Single item -->
-					<div class="carousel-item">
-						<img
-							src="assets/images/recentProjects/image2.png"
-							class="d-block w-100"
-							alt="Canyon at Nigh"
-						/>
-						<!-- <div class="carousel-caption d-none d-md-block">
-							<h5>Second slide label</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</div> -->
-					</div>
-
-					<!-- Single item -->
-					<div class="carousel-item">
-						<img
-							src="assets/images/recentProjects/image3.png"
-							class="d-block w-100"
-							alt="Cliff Above a Stormy Sea"
-						/>
-						<!-- <div class="carousel-caption d-none d-md-block">
-							<h5>Third slide label</h5>
-							<p>
-								Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+						<div
+							class="absolute top-0 left-0 right-0 flex flex-col p-4 text-white"
+						>
+							<div class="recent-background"></div>
+							<p class="z-10 lg:text-2xl text-xl mb-1">
+								Metal Manufacturing - Wisconsin, USA
 							</p>
-						</div> -->
+							<p class="z-10 lg:text-lg md:text-md text-sm mb-1">
+								Provided proof of concept for a system to pull data from a
+								legacy system, to monitor and display process of metal working
+								temperatures. Implementing automated data collection using an
+								Opto 22 Epic Controller with NodeRed application code and
+								dashboard programming. The system collects and stores process
+								temperature data to a network database for analysis and record
+								keeping.
+							</p>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<img
+							src="assets/images/recentProjects/CroppedImages/image1.png"
+							class="d-block w-100"
+							alt="Aggregates"
+						/>
+						<div
+							class="absolute top-0 left-0 right-0 flex flex-col p-4 text-white"
+						>
+							<div class="recent-background"></div>
+							<p class="z-10 lg:text-2xl text-xl mb-1">
+								Aggregates - Multiple Locations, USA
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm mb-1">
+								Provided solutions to automate and collect data for mining and
+								material transfer operations. Systems were communications
+								intensive interfacing with weigh scales, RF Tag readers,
+								rail-car tag readers, security camera system, large digital
+								message centers, point of sale devices, receipt printers,
+								protocol converters, sensors and control devices.
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm">
+								The system is powered by Opto 22 and Ignition Edge, interfacing
+								with OEM equipment containing Rockwell PLCs. Periodic and
+								transactional historical data is maintained, analyzed and
+								reported in conjunction with IT needs.
+							</p>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<img
+							src="assets/images/recentProjects/CroppedImages/image6.png"
+							class="d-block w-100"
+							alt="Environmental Process"
+						/>
+						<div
+							class="absolute top-0 left-0 right-0 flex flex-col p-4 text-white"
+						>
+							<div class="recent-background"></div>
+							<p class="z-10 lg:text-2xl text-xl mb-1">
+								Environmental Process - Multiple Locations, USA
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm mb-1">
+								Tellus was part of the software team to create an automation
+								system for natural water rehabilitation. The process separates
+								algae from water without rupturing and releasing the algal
+								toxins, and removes nutrients responsible for further
+								blooms.Tellus implemented communication, data handling, and
+								alerting, to allow scientists to focus on the critical aspects
+								of the process.
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm">
+								The system is powered by Epic and is available on the Opto 22
+								website as a case study: Clearing Harmful Algal Blooms.
+							</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="assets/images/recentProjects/CroppedImages/image4.png"
+							class="d-block w-100"
+							alt="Ag Manufacturing"
+						/>
+						<div
+							class="absolute top-0 left-0 right-0 flex flex-col p-4 text-white"
+						>
+							<div class="recent-background"></div>
+							<p class="z-10 lg:text-2xl text-xl mb-1">
+								Ag Feed - Minnesota, USA
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm mb-1">
+								Provided an Ignition based system for recipe management and
+								controls for an animal feed manufacturer. Tellus simplified and
+								upgraded existing PLCs and front panel to include an automated
+								Ignition system for automated recipe selection and process
+								control.
+							</p>
+							<p class="z-10 lg:text-lg md:text-md text-sm">
+								The system also includes integration of Rockwell parts.
+							</p>
+						</div>
 					</div>
 				</div>
 				<!-- Inner -->
@@ -904,10 +1171,8 @@
 			</div>
 		</div>
 
-		<!-- Carousel wrapper -->
-
 		<!------------ ABOUT / CONTACT ------------>
-		<div class="is-grey py-4">
+		<div class="is-grey pt-4 pb-5" id="contact">
 			<article class="container text-center">
 				<p class="description-title">About</p>
 				<div class="row justify-content-center" id="contact">
@@ -920,15 +1185,15 @@
 					</p>
 				</div>
 				<img
-					class="img-fluid col-lg-6 col-md-8 col-sm-10 offset-lg-3 offset-md-2 offset-sm-1"
+					class="img-fluid col-lg-6 col-md-8 col-sm-10 mt-5 mb-4 offset-lg-3 offset-md-2 offset-sm-1"
 					style="box-shadow: 0 0 2rem rgba(40, 40, 40, 1)"
 					src="assets/images/content-img/milwaukee.jpg"
 				/>
 			</article>
 		</div>
-		<div class="is-grey text-center py-4">
+		<div class="is-grey text-center">
 			<p class="description-title text-center">Contact</p>
-			<div class="row justify-content-center description-text" id="about">
+			<div class="row justify-content-center description-text pb-7" id="about">
 				<p>2526 North Booth Street, Milwaukee WI 53212</p>
 				<p>
 					Dave Engsberg | Software Engineer | 262-853-2151 |
